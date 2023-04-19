@@ -13,7 +13,7 @@ public class Main {
 
     public static void task1() {
         System.out.println("Задача 1");
-        var dog = 7.0;
+        var dog = 8.0;
         System.out.println(dog);
         var cat = 3.6;
         System.out.println(cat);
