@@ -7,6 +7,8 @@ public class Main {
         task5();
         task6();
         task7();
+        task8();
+
     }
 
     public static void task1() {
@@ -84,9 +86,21 @@ public class Main {
         // Вычисление разницы весов спортсменов способом "Вычитание из большего веса меньшего"
         var moreWeight = 82.7;
         var lessWeight = 78.2;
-        var differenceWeight = moreWeight - lessWeight;
-        System.out.println("Разница между весами бойцов " + differenceWeight + " кг");
+        var differenceWeight1 = moreWeight - lessWeight;
+        System.out.println("Разница между весами бойцов " + differenceWeight1 + " кг");
         // Вычисление разницы весов спортсменов способом "С помощью функции остаток от деления"
-
+        var totalWeight = moreWeight + lessWeight;
+        var differenceWeight2 = (moreWeight - lessWeight) % totalWeight;
+        System.out.println("Разница между весами бойцов " + differenceWeight2 + " кг");
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        var workingHours = 640;
+        var employeeWorkTime = 8;
+        var employeesInCompany = workingHours / employeeWorkTime;
+        System.out.println("Всего работников в компании - " + employeesInCompany + " человек");
+        employeesInCompany = employeesInCompany + 94;
+        var workingHours2 = employeesInCompany * 8;
+        System.out.println("Если в компании работает " + employeesInCompany + " человек, то всего " + workingHours2 + " часов работы может быть поделено между сотрудниками");
     }
 }
